@@ -1,0 +1,26 @@
+/* Card.css */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  height: auto;
+  width: 400px;
+}
+
+.card-header {
+  background-color: #d0f0e0;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+.card-body {
+  background-color: #fff;
+  padding: 8px;
+}
+
+.card-footer {
+  background-color: #e0f0d0;
+  padding: 8px;
+  border-top: 1px solid #ccc;
+}

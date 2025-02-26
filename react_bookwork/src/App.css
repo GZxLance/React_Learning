@@ -1,0 +1,99 @@
+/* src/App.css */
+.app-container {
+  max-width: 1000px;
+  margin: 50px auto; /* 增加顶部间距 */
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px; /* 更圆润的边角 */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* 更明显的阴影 */
+}
+
+.card-header {
+  padding: 15px;
+}
+
+.card-body {
+  padding: 25px;
+  background: #d2e7f5; /* 浅灰色背景，增加层次感 */
+}
+
+.card-footer {
+  background: #f8f9fa;
+  padding: 15px;
+  text-align: center;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input {
+  padding: 12px;
+  border: 1px solid #a3d7e9;
+  border-radius: 6px;
+}
+
+form button {
+  padding: 12px;
+  background: #7da9bf; /* 渐变色按钮 */
+  color: #fff;
+  margin-right: auto;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #68a2bf; /* 鼠标悬停时颜色变化 */
+}
+
+.book-list {
+  margin-bottom: 25px;
+}
+
+.book-list h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.book-list div {
+  padding: 15px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  background: #f1f7ff; /* 浅灰色背景 */
+}
+
+.book-list button {
+  margin-right: 10px;
+  padding: 6px 12px;
+  background: #7da3bf; /* 渐变色按钮 */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.book-list button:hover {
+  background: hsl(211, 100%, 50%);
+}
+
+.book-detail {
+  padding: 25px;
+  background: #f9f9f9; /* 浅灰色背景 */
+  border-radius: 12px;
+}
+
+.book-detail h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.book-detail p {
+  margin: 5px 0;
+  color: #555; /* 更深的文字颜色 */
+}
