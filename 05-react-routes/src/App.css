@@ -1,0 +1,150 @@
+/* 设置整个导航栏的基础样式 */
+nav {
+  background-color: #333; /* 导航背景颜色 */
+  padding: 10px 20px; /* 内边距 */
+  margin-bottom: 20px; /* 与内容之间的外边距 */
+  text-align: center;
+}
+
+/* 链接基础样式 */
+nav a {
+  color: white; /* 文字颜色 */
+  text-decoration: none; /* 去除下划线 */
+  padding: 8px 12px; /* 内边距，给链接增加点击区域 */
+  border-radius: 4px; /* 圆角 */
+  transition: background-color 0.3s ease; /* 背景颜色过渡效果 */
+  margin-right: 10px; /* 每个链接之间的间距 */
+}
+
+/* 当鼠标悬停在链接上时的样式 */
+nav a:hover {
+  background-color: #555; /* 更深一点的背景颜色 */
+}
+
+.hello {
+  background-color: #555;
+  color: white;
+  padding: 5px 10px; /* 内边距 */
+  margin-bottom: 10px; /* 与内容之间的外边距 */
+  text-align: center;
+}
+
+/* 当前激活的链接样式 */
+.active {
+  background-color: #ff4d4d; /* 红色背景 */
+  font-weight: bold; /* 加粗字体 */
+}
+
+/* 为Profile页面内的导航链接定义样式 */
+.profile-nav {
+  padding: 10px;
+  width: 200px; /* 设置一个固定宽度 */
+}
+
+.profile-nav a {
+  display: block; /* 让链接项占据一整行，实现竖向排列 */
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 5px; /* 每个链接之间的间距 */
+}
+
+.profile-nav a:hover {
+  background-color: #555;
+}
+
+.profile-nav .active {
+  background-color: #ff4d4d; /* 红色背景 */
+  font-weight: bold;
+}
+
+/* 为Dashboard页面内的导航链接定义样式 */
+.dashboard-nav {
+  background-color: #333; /* 导航背景颜色 */
+  color: white;
+  padding: 10px 20px; /* 内边距 */
+  margin-bottom: 20px; /* 与内容之间的外边距 */
+  text-align: left;
+}
+
+.dashboard-nav a {
+  color: white; /* 文字颜色 */
+  text-decoration: none; /* 去除下划线 */
+  padding: 8px 12px; /* 内边距，给链接增加点击区域 */
+  border-radius: 4px; /* 圆角 */
+  transition: background-color 0.3s ease; /* 背景颜色过渡效果 */
+  margin-right: 10px; /* 每个链接之间的间距 */
+}
+
+.dashboard-nav a:hover {
+  background-color: #555; /* 更深一点的背景颜色 */
+}
+
+.dashboard-nav .active {
+  background-color: #ff4d4d; /* 红色背景 */
+  font-weight: bold; /* 加粗字体 */
+}
+
+/* 登录页面容器样式 */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #333; /* 黑色背景 */
+}
+
+/* 登录表单样式 */
+.login-form {
+  background-color: #1a1a1a; /* 深灰色背景 */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+  width: 300px; /* 固定宽度 */
+}
+
+/* 表单标题样式 */
+.login-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ff4d4d; /* 红色文字 */
+}
+
+/* 输入框样式 */
+.login-form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: #fff; /* 白色背景 */
+  color: #000; /* 黑色文字 */
+  box-sizing: border-box; /* 包括内边距和边框在内的总宽度等于设置的宽度 */
+}
+
+/* 提交按钮样式 */
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff4d4d; /* 红色背景 */
+  color: white; /* 白色文字 */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* 背景颜色过渡效果 */
+}
+
+/* 提交按钮悬停样式 */
+.login-form button:hover {
+  background-color: #cc3939; /* 更深一点的红色背景 */
+}
+
+/* 头像样式 */
+.avatar.z {
+  display: flex;
+  align-items: center;
+  color: white; /* 字体颜色为白色 */
+}
