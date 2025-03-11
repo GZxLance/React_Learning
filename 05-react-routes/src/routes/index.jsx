@@ -13,35 +13,42 @@ import Book from "../pages/Book";
 import NavBar from "../components/NavBar";
 import BlogList from "../components/BlogList";
 import BlogDetails from "../components/BlogDetails";
-import Content from "../pages/dashboard/Content"; // 新增导入
+import Content from "../pages/Content"; // 新增导入
+import Layout from "../pages/Layout";
 
 const AppRoutes = () => {
-  const location = useLocation();
-  const isLoginPage = location.pathname === "/login";
-  const user = JSON.parse(localStorage.getItem("user"));
+  // const location = useLocation();
+  // const isLoginPage = location.pathname === "/login";
+  // const user = JSON.parse(localStorage.getItem("user"));
 
-  if (!user && !isLoginPage) {
-    return <Navigate to="/login" state={{ from: location }} replace />;
-  }
+  // if (!user && !isLoginPage) {
+  //   return <Navigate to="/login" state={{ from: location }} replace />;
+  // }
 
   return (
     <>
-      {!isLoginPage && <NavBar />}
+      {/* {!isLoginPage && <NavBar />} */}
       <Routes>
-        <Route path="/" element={<BlogList />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/book/:bookId" element={<Book />} />
-        <Route path="/blog/:blogIndex" element={<BlogDetails />} />
         <Route path="/login" element={<Login />} />
         <Route path="*" element={<NotFound />} />
-        <Route path="/dashboard" element={<Dashboard />}>
-          <Route index element={<Profile />} />
-          <Route path="profile" element={<Profile />}>
-            <Route path="content" element={<Content />} /> {/* 新增路由 */}
-            <Route path="fans" element={<Fans />} />
-            <Route path="follow" element={<Follow />} />
+
+        <Route path="/" element={<Layout />}>
+          <Route path="/" element={<BlogList />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/book/:bookId" element={<Book />} />
+          <Route path="/blog/:blogIndex" element={<BlogDetails />} />
+          {/* <Route path="/login" element={<Login />} /> */}
+          {/* <Route path="*" element={<NotFound />} /> */}
+          <Route path="/dashboard" element={<Dashboard />}>
+            <Route index element={<Profile />} />
+            <Route path="profile" element={<Profile />}>
+              <Route index element={<Content />} />
+              <Route path="content" element={<Content />} /> {/* 新增路由 */}
+              <Route path="fans" element={<Fans />} />
+              <Route path="follow" element={<Follow />} />
+            </Route>
+            <Route path="setting" element={<Setting />} />
           </Route>
-          <Route path="setting" element={<Setting />} />
         </Route>
       </Routes>
     </>
