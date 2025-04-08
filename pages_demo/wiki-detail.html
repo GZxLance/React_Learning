@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>米游社 - 百科详情</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <nav class="bg-[#2a2b38] fixed w-full z-50">
+      <!-- 导航栏结构 -->
+    </nav>
+
+    <main class="pt-20">
+      <div class="max-w-6xl mx-auto px-4">
+        <!-- 面包屑导航 -->
+        <div class="text-sm text-gray-500 mb-6">
+          <a href="#" class="hover:text-gray-700">百科</a>
+          <span class="mx-2">/</span>
+          <a href="#" class="hover:text-gray-700">角色图鉴</a>
+          <span class="mx-2">/</span>
+          <span class="text-gray-900">神里绫华</span>
+        </div>
+
+        <div class="grid grid-cols-12 gap-6">
+          <!-- 左侧内容 -->
+          <div class="col-span-8">
+            <!-- 角色信息卡片 -->
+            <div class="bg-white rounded-lg p-6 mb-6">
+              <div class="flex">
+                <img
+                  src="https://wanglanhua.oss-cn-beijing.aliyuncs.com/image/F-linghua.jpg"
+                  alt="角色立绘"
+                  class="w-64 rounded-lg mr-6"
+                />
+                <div class="flex-1">
+                  <h1 class="text-3xl font-bold mb-4">神里绫华</h1>
+                  <div class="grid grid-cols-2 gap-4 text-gray-600">
+                    <div>
+                      <span class="text-gray-500">稀有度：</span>
+                      ★★★★★
+                    </div>
+                    <div>
+                      <span class="text-gray-500">命途：</span>
+                      智识
+                    </div>
+                    <div>
+                      <span class="text-gray-500">属性：</span>
+                      冰
+                    </div>
+                    <div>
+                      <span class="text-gray-500">阵营：</span>
+                      星穹列车
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 详细介绍 -->
+            <div class="bg-white rounded-lg p-6 mb-6">
+              <h2 class="text-xl font-bold mb-4">角色介绍</h2>
+              <div class="prose max-w-none">
+                <p>这里是角色的详细介绍内容...</p>
+              </div>
+            </div>
+
+            <!-- 技能信息 -->
+            <div class="bg-white rounded-lg p-6">
+              <h2 class="text-xl font-bold mb-4">技能天赋</h2>
+              <div class="space-y-6">
+                <div>
+                  <div class="flex items-center mb-2">
+                    <img
+                      src="https://placehold.co/50"
+                      alt="技能图标"
+                      class="w-10 h-10 rounded mr-3"
+                    />
+                    <h3 class="font-bold">技能名称</h3>
+                  </div>
+                  <p class="text-gray-600">技能描述内容...</p>
+                </div>
+                <!-- 更多技能 -->
+              </div>
+            </div>
+          </div>
+
+          <!-- 右侧边栏 -->
+          <div class="col-span-4">
+            <!-- 相关攻略 -->
+            <div class="bg-white rounded-lg p-6 mb-6">
+              <h3 class="font-bold mb-4">相关攻略</h3>
+              <div class="space-y-4">
+                <a href="#" class="block hover:bg-gray-50 p-2 rounded">
+                  <h4 class="font-medium mb-1">攻略标题</h4>
+                  <p class="text-sm text-gray-500">2023-12-20</p>
+                </a>
+                <!-- 更多攻略 -->
+              </div>
+            </div>
+
+            <!-- 相关角色 -->
+            <div class="bg-white rounded-lg p-6">
+              <h3 class="font-bold mb-4">相关角色</h3>
+              <div class="grid grid-cols-3 gap-4">
+                <a href="#" class="text-center">
+                  <img
+                    src="https://wanglanhua.oss-cn-beijing.aliyuncs.com/image/Q-gongzi.png"
+                    alt="角色头像"
+                    class="w-full rounded-lg mb-2"
+                  />
+                  <span class="text-sm">达达利亚</span>
+                </a>
+                <!-- 更多角色 -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

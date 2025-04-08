@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>米游社 - 登录/注册</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <div class="min-h-screen flex items-center justify-center">
+      <div class="max-w-md w-full mx-4">
+        <!-- Logo -->
+        <div class="text-center mb-8">
+          <img
+            src="https://upload-bbs.mihoyo.com/upload/2023/03/15/283645534/d40e04a48613f47d3d3528669931f7b1_5675059059112501179.png"
+            alt="Logo"
+            class="h-12 mx-auto"
+          />
+        </div>
+
+        <!-- 切换卡片 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <!-- 切换按钮 -->
+          <div class="flex border-b">
+            <button
+              class="flex-1 px-6 py-4 text-center text-blue-500 border-b-2 border-blue-500 font-medium"
+            >
+              登录
+            </button>
+            <button
+              class="flex-1 px-6 py-4 text-center text-gray-500 hover:text-gray-700"
+            >
+              注册
+            </button>
+          </div>
+
+          <!-- 登录表单 -->
+          <div class="p-6">
+            <form>
+              <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-medium mb-2">
+                  账号
+                </label>
+                <input
+                  type="text"
+                  class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="请输入手机号/邮箱"
+                />
+              </div>
+              <div class="mb-6">
+                <label class="block text-gray-700 text-sm font-medium mb-2">
+                  密码
+                </label>
+                <input
+                  type="password"
+                  class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="请输入密码"
+                />
+              </div>
+              <div class="flex items-center justify-between mb-6">
+                <label class="flex items-center">
+                  <input type="checkbox" class="w-4 h-4 text-blue-500" />
+                  <span class="ml-2 text-sm text-gray-600">记住我</span>
+                </label>
+                <a href="#" class="text-sm text-blue-500 hover:text-blue-600"
+                  >忘记密码？</a
+                >
+              </div>
+              <button
+                type="submit"
+                class="w-full py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+              >
+                登录
+              </button>
+            </form>
+
+            <!-- 第三方登录 -->
+            <div class="mt-6">
+              <div class="relative">
+                <div class="absolute inset-0 flex items-center">
+                  <div class="w-full border-t border-gray-300"></div>
+                </div>
+                <div class="relative flex justify-center text-sm">
+                  <span class="px-2 bg-white text-gray-500">
+                    其他登录方式
+                  </span>
+                </div>
+              </div>
+
+              <div class="mt-6 grid grid-cols-3 gap-3">
+                <!-- 第三方登录按钮 -->
+                <button
+                  class="flex justify-center items-center py-2 border rounded-lg hover:bg-gray-50"
+                >
+                  <img
+                    src="path/to/wechat-icon.png"
+                    alt="微信"
+                    class="w-5 h-5"
+                  />
+                </button>
+                <button
+                  class="flex justify-center items-center py-2 border rounded-lg hover:bg-gray-50"
+                >
+                  <img src="path/to/qq-icon.png" alt="QQ" class="w-5 h-5" />
+                </button>
+                <button
+                  class="flex justify-center items-center py-2 border rounded-lg hover:bg-gray-50"
+                >
+                  <img
+                    src="path/to/weibo-icon.png"
+                    alt="微博"
+                    class="w-5 h-5"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 注册表单（默认隐藏） -->
+          <div class="hidden p-6">
+            <form>
+              <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-medium mb-2">
+                  手机号
+                </label>
+                <div class="flex space-x-2">
+                  <input
+                    type="text"
+                    class="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    placeholder="请输入手机号"
+                  />
+                  <button
+                    type="button"
+                    class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200"
+                  >
+                    获取验证码
+                  </button>
+                </div>
+              </div>
+              <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-medium mb-2">
+                  验证码
+                </label>
+                <input
+                  type="text"
+                  class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="请输入验证码"
+                />
+              </div>
+              <div class="mb-6">
+                <label class="block text-gray-700 text-sm font-medium mb-2">
+                  设置密码
+                </label>
+                <input
+                  type="password"
+                  class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="请设置密码"
+                />
+              </div>
+              <div class="mb-6">
+                <label class="flex items-center">
+                  <input type="checkbox" class="w-4 h-4 text-blue-500" />
+                  <span class="ml-2 text-sm text-gray-600">
+                    我已阅读并同意
+                    <a href="#" class="text-blue-500 hover:text-blue-600"
+                      >《用户协议》</a
+                    >
+                    和
+                    <a href="#" class="text-blue-500 hover:text-blue-600"
+                      >《隐私政策》</a
+                    >
+                  </span>
+                </label>
+              </div>
+              <button
+                type="submit"
+                class="w-full py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+              >
+                注册
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- 底部文字 -->
+        <div class="mt-4 text-center text-sm text-gray-500">
+          登录代表你同意我们的
+          <a href="#" class="text-blue-500 hover:text-blue-600">服务条款</a>
+          和
+          <a href="#" class="text-blue-500 hover:text-blue-600">隐私政策</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

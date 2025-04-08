@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>米游社 - 攻略</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@heroicons/react@2.0.18/outline.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <!-- 复用导航栏 -->
+    <nav class="bg-[#2a2b38] fixed w-full z-50">
+      <!-- 与 home.html 相同的导航栏结构 -->
+    </nav>
+
+    <main class="pt-20">
+      <!-- 攻略分类导航 -->
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="bg-white rounded-lg p-4 mb-6">
+          <div class="flex space-x-6 text-gray-600">
+            <a href="#" class="text-blue-500 font-medium">最新攻略</a>
+            <a href="#" class="hover:text-blue-500">新手指南</a>
+            <a href="#" class="hover:text-blue-500">角色攻略</a>
+            <a href="#" class="hover:text-blue-500">关卡攻略</a>
+            <a href="#" class="hover:text-blue-500">装备搭配</a>
+          </div>
+        </div>
+
+        <!-- 攻略内容区 -->
+        <div class="grid grid-cols-12 gap-6">
+          <!-- 左侧主要内容 -->
+          <div class="col-span-9">
+            <!-- 精选攻略 -->
+            <div class="bg-white rounded-lg p-6 mb-6">
+              <h2 class="text-xl font-bold mb-4">精选攻略</h2>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="relative rounded-lg overflow-hidden">
+                  <img
+                    src="https://wanglanhua.oss-cn-beijing.aliyuncs.com/image/C-liyue.png"
+                    alt="攻略封面"
+                    class="w-full h-48 object-cover"
+                  />
+                  <div
+                    class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 p-4"
+                  >
+                    <h3 class="text-white font-medium">3.1版本全攻略</h3>
+                    <p class="text-gray-200 text-sm mt-1">
+                      包含所有新角色攻略及副本攻略
+                    </p>
+                  </div>
+                </div>
+                <!-- 更多精选攻略卡片 -->
+              </div>
+            </div>
+
+            <!-- 攻略列表 -->
+            <div class="bg-white rounded-lg p-6">
+              <div class="flex justify-between items-center mb-4">
+                <h2 class="text-xl font-bold">最新攻略</h2>
+                <div class="flex space-x-2">
+                  <button
+                    class="px-4 py-2 text-sm rounded-full bg-gray-100 hover:bg-gray-200"
+                  >
+                    最新
+                  </button>
+                  <button
+                    class="px-4 py-2 text-sm rounded-full bg-gray-100 hover:bg-gray-200"
+                  >
+                    热门
+                  </button>
+                </div>
+              </div>
+
+              <!-- 攻略列表项 -->
+              <div class="space-y-6">
+                <div class="flex space-x-4 pb-6 border-b">
+                  <img
+                    src="https://wanglanhua.oss-cn-beijing.aliyuncs.com/image/Q-gongzi.png"
+                    alt="攻略缩略图"
+                    class="w-48 h-32 rounded-lg object-cover"
+                  />
+                  <div class="flex-1">
+                    <h3 class="text-lg font-medium mb-2">
+                      「天才们的假日」活动攻略
+                    </h3>
+                    <p class="text-gray-600 text-sm mb-4 line-clamp-2">
+                      详细介绍活动玩法及奖励获取方式，助你轻松通关...
+                    </p>
+                    <div class="flex items-center text-sm text-gray-500">
+                      <img
+                        src="https://wanglanhua.oss-cn-beijing.aliyuncs.com/image/Q-keli.png"
+                        alt="作者头像"
+                        class="w-6 h-6 rounded-full mr-2"
+                      />
+                      <span>作者名称</span>
+                      <span class="mx-2">·</span>
+                      <span>2小时前</span>
+                      <span class="mx-2">·</span>
+                      <span>阅读 1.2w</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- 更多攻略列表项 -->
+              </div>
+            </div>
+          </div>
+
+          <!-- 右侧边栏 -->
+          <div class="col-span-3 space-y-6">
+            <!-- 热门攻略 -->
+            <div class="bg-white rounded-lg p-4">
+              <h3 class="font-bold mb-4">热门攻略</h3>
+              <div class="space-y-4">
+                <div class="flex items-center space-x-2">
+                  <span class="text-blue-500 font-medium">1</span>
+                  <p class="text-sm line-clamp-1">新版本必看攻略合集</p>
+                </div>
+                <!-- 更多热门攻略项 -->
+              </div>
+            </div>
+
+            <!-- 攻略作者榜 -->
+            <div class="bg-white rounded-lg p-4">
+              <h3 class="font-bold mb-4">优秀作者</h3>
+              <div class="space-y-4">
+                <div class="flex items-center space-x-3">
+                  <img
+                    src="https://wanglanhua.oss-cn-beijing.aliyuncs.com/image/Q-keli.png"
+                    alt="作者头像"
+                    class="w-10 h-10 rounded-full"
+                  />
+                  <div>
+                    <p class="font-medium">作者昵称</p>
+                    <p class="text-sm text-gray-500">攻略 99 · 获赞 10w+</p>
+                  </div>
+                </div>
+                <!-- 更多作者项 -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

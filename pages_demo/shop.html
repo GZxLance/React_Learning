@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>米游社 - 商城</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <nav class="bg-[#2a2b38] fixed w-full z-50">
+      <!-- 导航栏结构 -->
+    </nav>
+
+    <main class="pt-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <!-- 商城banner -->
+        <div class="relative h-[300px] rounded-lg overflow-hidden mb-6">
+          <img
+            src="https://wanglanhua.oss-cn-beijing.aliyuncs.com/image/C-liyue.png"
+            alt="商城banner"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent flex items-center"
+          >
+            <div class="text-white px-8">
+              <h1 class="text-3xl font-bold mb-2">米游社商城</h1>
+              <p class="text-gray-200">精选周边，限量发售</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 分类导航 -->
+        <div class="bg-white rounded-lg p-4 mb-6">
+          <div class="flex space-x-6">
+            <a href="#" class="text-blue-500 font-medium">全部</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900">手办</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900">服装</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900">数码</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900">生活</a>
+          </div>
+        </div>
+
+        <!-- 商品列表 -->
+        <div class="grid grid-cols-4 gap-6">
+          <!-- 商品卡片 -->
+          <div
+            class="bg-white rounded-lg overflow-hidden hover:shadow-lg transition"
+          >
+            <div class="relative">
+              <img
+                src="https://wanglanhua.oss-cn-beijing.aliyuncs.com/image/Q-yanfei.jpeg"
+                alt="商品图片"
+                class="w-full aspect-square object-cover"
+              />
+              <span
+                class="absolute top-2 left-2 px-2 py-1 bg-red-500 text-white text-sm rounded"
+                >限量</span
+              >
+            </div>
+            <div class="p-4">
+              <h3 class="font-medium mb-2">商品名称</h3>
+              <p class="text-sm text-gray-500 mb-2 line-clamp-2">商品描述...</p>
+              <div class="flex items-center justify-between">
+                <div class="text-red-500">
+                  <span class="text-sm">¥</span>
+                  <span class="text-xl font-bold">299</span>
+                </div>
+                <button
+                  class="px-4 py-2 bg-blue-500 text-white rounded-full text-sm"
+                >
+                  立即购买
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- 更多商品卡片 -->
+        </div>
+
+        <!-- 分页 -->
+        <div class="flex justify-center mt-8">
+          <div class="flex space-x-2">
+            <button class="px-4 py-2 border rounded hover:bg-gray-50">
+              上一页
+            </button>
+            <button class="px-4 py-2 bg-blue-500 text-white rounded">1</button>
+            <button class="px-4 py-2 border rounded hover:bg-gray-50">2</button>
+            <button class="px-4 py-2 border rounded hover:bg-gray-50">3</button>
+            <button class="px-4 py-2 border rounded hover:bg-gray-50">
+              下一页
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

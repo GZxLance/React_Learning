@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>米游社 - 同人图</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <nav class="bg-[#2a2b38] fixed w-full z-50">
+      <!-- 导航栏结构 -->
+    </nav>
+
+    <main class="pt-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <!-- 筛选器 -->
+        <div class="bg-white rounded-lg p-4 mb-6">
+          <div class="flex items-center space-x-4">
+            <span class="text-gray-600">筛选：</span>
+            <div class="flex space-x-2">
+              <button class="px-4 py-1 rounded-full bg-blue-500 text-white">
+                最新
+              </button>
+              <button
+                class="px-4 py-1 rounded-full bg-gray-100 hover:bg-gray-200"
+              >
+                热门
+              </button>
+              <button
+                class="px-4 py-1 rounded-full bg-gray-100 hover:bg-gray-200"
+              >
+                精品
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 瀑布流图片展示 -->
+        <div class="columns-4 gap-4">
+          <div class="break-inside-avoid mb-4">
+            <div class="bg-white rounded-lg overflow-hidden">
+              <img
+                src="https://wanglanhua.oss-cn-beijing.aliyuncs.com/image/Q-anbo.png"
+                alt="同人图"
+                class="w-full"
+              />
+              <div class="p-4">
+                <h3 class="font-medium mb-2">作品标题</h3>
+                <div
+                  class="flex items-center justify-between text-sm text-gray-500"
+                >
+                  <div class="flex items-center">
+                    <img
+                      src="https://wanglanhua.oss-cn-beijing.aliyuncs.com/image/F-xingqiu.jpg"
+                      alt="作者头像"
+                      class="w-6 h-6 rounded-full mr-2"
+                    />
+                    <span>作者名称</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span>❤️ 1.2k</span>
+                    <span>💬 99</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 更多同人图作品 -->
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>米游社 - 签到</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <nav class="bg-[#2a2b38] fixed w-full z-50">
+      <!-- 导航栏结构 -->
+    </nav>
+
+    <main class="pt-20">
+      <div class="max-w-4xl mx-auto px-4">
+        <!-- 签到卡片 -->
+        <div class="bg-white rounded-lg p-6 mb-6">
+          <div class="text-center mb-8">
+            <h1 class="text-2xl font-bold mb-2">每日签到</h1>
+            <p class="text-gray-600">已连续签到 7 天</p>
+          </div>
+
+          <!-- 签到日历 -->
+          <div class="grid grid-cols-7 gap-4 mb-8">
+            <div class="text-center">
+              <div
+                class="w-12 h-12 mx-auto flex items-center justify-center rounded-full bg-blue-500 text-white"
+              >
+                <span>1</span>
+              </div>
+              <span class="text-sm text-gray-500 mt-1">已签到</span>
+            </div>
+            <!-- 重复6次类似的日期格子 -->
+          </div>
+
+          <!-- 签到按钮 -->
+          <button
+            class="w-full py-3 bg-blue-500 text-white rounded-lg font-medium hover:bg-blue-600 transition"
+          >
+            立即签到
+          </button>
+        </div>
+
+        <!-- 签到奖励 -->
+        <div class="bg-white rounded-lg p-6 mb-6">
+          <h2 class="text-lg font-bold mb-4">签到奖励</h2>
+          <div class="grid grid-cols-4 gap-4">
+            <div class="text-center">
+              <div
+                class="w-16 h-16 mx-auto bg-gray-100 rounded-lg flex items-center justify-center mb-2"
+              >
+                <img src="reward1.png" alt="奖励1" class="w-12 h-12" />
+              </div>
+              <span class="text-sm text-gray-600">原石×60</span>
+            </div>
+            <!-- 更多奖励项 -->
+          </div>
+        </div>
+
+        <!-- 签到规则 -->
+        <div class="bg-white rounded-lg p-6">
+          <h2 class="text-lg font-bold mb-4">签到规则</h2>
+          <ul class="text-gray-600 space-y-2">
+            <li>1. 每日0:00更新签到</li>
+            <li>2. 连续签到7天可获得额外奖励</li>
+            <li>3. 中断签到将重新计算连续天数</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

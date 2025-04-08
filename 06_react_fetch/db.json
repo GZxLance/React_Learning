@@ -1,0 +1,76 @@
+{
+  "posts": [
+    {
+      "id": "2",
+      "title": "深入理解 Webpack 构建流程",
+      "body": "Webpack 作为现代前端开发中最流行的构建工具，理解其工作原理对于优化构建配置至关重要。本文将详细介绍 Webpack 的核心概念、构建流程、常用插件以及性能优化技巧。",
+      "image": "https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg",
+      "author": "李华",
+      "date": "2024-01-16"
+    },
+    {
+      "id": "3",
+      "title": "前端自动化测试策略",
+      "body": "自动化测试是保证代码质量的重要手段。从单元测试到端到端测试，本文将介绍前端测试的不同层次，以及如何使用 Jest、Cypress 等工具构建完整的测试体系。",
+      "image": "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg",
+      "author": "王芳",
+      "date": "2024-01-17"
+    },
+    {
+      "id": "4",
+      "title": "CI/CD 在前端项目中的实践",
+      "body": "持续集成和持续部署是现代软件开发流程中不可或缺的环节。本文将分享如何在前端项目中搭建 CI/CD 流程，使用 GitHub Actions 或 Jenkins 实现自动化构建、测试和部署。",
+      "image": "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg",
+      "author": "陈强",
+      "date": "2024-01-18"
+    },
+    {
+      "id": "5",
+      "title": "前端性能优化实战指南",
+      "body": "性能优化是前端工程化中的重要议题。从代码层面到构建配置，再到服务器部署，本文将全面介绍前端性能优化的各个环节，帮助你构建高性能的 Web 应用。",
+      "image": "https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg",
+      "author": "刘洋",
+      "date": "2024-01-19"
+    },
+    {
+      "id": "6",
+      "title": "现代化前端开发工具链",
+      "body": "前端开发工具链的选择直接影响开发效率。本文将介绍包括包管理器、构建工具、代码检查工具等在内的完整工具链，以及如何根据项目需求选择合适的工具。",
+      "image": "https://images.pexels.com/photos/1181678/pexels-photo-1181678.jpeg",
+      "author": "赵雪",
+      "date": "2024-01-20"
+    },
+    {
+      "id": "7",
+      "title": "微前端架构实践",
+      "body": "微前端是一种新兴的前端架构模式，适用于大型应用的开发和维护。本文将分享微前端的核心理念、实现方案以及在实际项目中的最佳实践。",
+      "image": "https://images.pexels.com/photos/1181681/pexels-photo-1181681.jpeg",
+      "author": "孙明",
+      "date": "2024-01-21"
+    },
+    {
+      "id": "8",
+      "title": "前端监控系统搭建",
+      "body": "前端监控对于提升用户体验和及时发现问题至关重要。本文将详细介绍如何搭建前端监控系统，包括性能监控、错误监控和用户行为分析等方面。",
+      "image": "https://images.pexels.com/photos/1181683/pexels-photo-1181683.jpeg",
+      "author": "周红",
+      "date": "2024-01-22"
+    },
+    {
+      "id": "9",
+      "title": "前端安全最佳实践",
+      "body": "Web 安全是不容忽视的话题。本文将介绍常见的前端安全问题及其解决方案，包括 XSS、CSRF 防护，以及如何在构建过程中集成安全检查。",
+      "image": "https://images.pexels.com/photos/1181684/pexels-photo-1181684.jpeg",
+      "author": "吴婷",
+      "date": "2024-01-23"
+    },
+    {
+      "id": "10",
+      "title": "现代化前端部署策略",
+      "body": "前端部署策略直接影响应用的可用性和用户体验。本文将探讨包括静态资源优化、CDN 使用、灰度发布等在内的现代化前端部署策略。",
+      "image": "https://images.pexels.com/photos/1181685/pexels-photo-1181685.jpeg",
+      "author": "郭峰",
+      "date": "2024-01-24"
+    }
+  ]
+}
