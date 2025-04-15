@@ -1,0 +1,28 @@
+.scroll-page {
+  height: 100vh;
+  background-color: #f5f5f5;
+
+  .scroll-list {
+    height: 100%;
+
+    .list-item {
+      margin: 20px;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+      .item-text {
+        font-size: 28px;
+        color: #333;
+      }
+    }
+
+    .loading {
+      padding: 20px;
+      text-align: center;
+      color: #999;
+      font-size: 24px;
+    }
+  }
+}

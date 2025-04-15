@@ -1,0 +1,100 @@
+.clipboard-page {
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+
+  .title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    display: block;
+  }
+
+  .content {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  .input-section,
+  .display-section {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .section-title {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .input-field {
+    background-color: #f8f8f8;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    height: 100px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .clipboard-content {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    min-height: 100px;
+
+    .content-text {
+      font-size: 28px;
+      color: #333;
+      word-break: break-all;
+    }
+
+    .placeholder-text {
+      font-size: 28px;
+      color: #999;
+    }
+  }
+
+  .action-btn {
+    background-color: #4594d5;
+    color: #fff;
+    font-size: 28px;
+    width: 100%;
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
+
+  .tips {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+
+    .tip-title {
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .tip-text {
+      font-size: 26px;
+      color: #666;
+      margin-bottom: 12px;
+      display: block;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
